@@ -48,6 +48,21 @@ Open app/views/layouts/application.html.erb and put the following lines on the <
       <%= stylesheet_link_tag 'jquery-ui-1.8.2.custom.css' %>
     </head>
 
-## Models
+## Create a model
 
+Let's create a Brand model that will have a name attribute:
 
+    rails g model Brand name:string
+    
+Create your database by running:
+
+    rake db:create
+    rake db:migrate
+
+Now, to make sure we have something to test the app, lets add something to the seed file. Open *db/seeds.rb* and add the following lines:
+
+    Brand.create(:name => 'Alpha')
+    Brand.create(:name => 'Beta')
+    Brand.create(:name => 'Gama')
+
+Then, run *rake db:seed* to populate the database with the values on the seeds file.

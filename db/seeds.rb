@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+Brand.create(:name => 'Alpha')
+Brand.create(:name => 'Beta')
+Brand.create(:name => 'Gama')

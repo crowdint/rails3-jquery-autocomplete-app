@@ -1,4 +1,7 @@
 Rails3JqueryAutocompleteApp::Application.routes.draw do
+  get "welcome/show"
+  root :to => "welcome#show"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

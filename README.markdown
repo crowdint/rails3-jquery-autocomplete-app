@@ -54,7 +54,7 @@ Open app/views/layouts/application.html.erb and put the following lines on the <
 
 ## Create a model
 
-Let's create a Brand model that will have a name attribute:
+Let's create a model named Brand that will have a name attribute:
 
     rails g model Brand name:string
     
@@ -70,3 +70,22 @@ Now, to make sure we have something to test the app, lets add something to the s
     Brand.create(:name => 'Gama')
 
 Then, run *rake db:seed* to populate the database with the values on the seeds file.
+
+## Create a Controller
+
+Create a controller called welcome with a show action:
+
+    rails g controller welcome show
+    
+Edit the *config/routes.rb* file, add the following two lines:
+
+    get "welcome/show"
+    root :to => "welcome#show"
+
+Delete the *public/index.html* file.
+
+Run the server, 
+
+    rails s
+    
+Go to http://127.0.0.1:3000 and make sure everything is running just fine.

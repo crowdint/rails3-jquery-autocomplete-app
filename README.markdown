@@ -27,6 +27,10 @@ Now, make sure you install the required gems by running:
 
     bundle install
     
+Run the nifty-generators layout command to install some default files:
+
+    rails g nifty:layout
+    
 ## Javascript files
 
 Go to [http://jqueryui.com/download](http://jqueryui.com/download) and create a custom build for jQuery-UI. Obviously, make sure you select the Autocomplete widget.

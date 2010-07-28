@@ -1,0 +1,29 @@
+# rails3-jquery-autocomplete Example Application
+
+This app is meant to provide more clarity on how to use the rails3-jquery-autocomplete gem.
+
+# The Application, step by step
+
+## Gem requirements
+
+The first thing to do is, add the following line to the Gemfile:
+
+    gem 'rails3-jquery-autocomplete'
+
+This will include the gem as a dependency for the application.
+
+Then, make sure you have the gem installed by running:
+
+    bundle install
+    
+## Javascript files
+
+Go to [http://jqueryui.com/download] and create a custom build for jQuery-ui. Obviously, make sure you select the Autocomplete widget.
+
+Click on download and extract all the files in the zip file you just downloaded.
+
+Copy the files on the _js_ folder to the public/javascripts folder on your app.
+
+Copy the files on the _css_ folder to the public/stylesheets folder on your app. 
+
+

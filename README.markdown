@@ -101,7 +101,7 @@ Go to http://127.0.0.1:3000 on your browser and make sure everything is running 
 
 Add this line at the very top of the *app/controllers/welcome_controller.rb* file:
 
-      autocomplete :brand, :name
+    autocomplete :brand, :name
 
 And add to *config/routes.rb*:
 

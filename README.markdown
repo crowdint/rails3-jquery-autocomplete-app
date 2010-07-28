@@ -16,6 +16,7 @@ The _-J_ option is used to skip prototype, at this point I assume you won't need
 
 The first thing to do is, add the following line to the Gemfile:
 
+    gem 'rails', '3.0.0.rc'
     gem 'rails3-jquery-autocomplete'
     gem 'nifty-generators'
 

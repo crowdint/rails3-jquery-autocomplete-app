@@ -4,6 +4,14 @@ This app is meant to provide more clarity on how to use the rails3-jquery-autoco
 
 # The Application, step by step
 
+## Create the app
+
+Use the rails command to create a new application
+
+    rails new rails3-jquery-autocomplete -J
+    
+The _-J_ option is used to skip prototype, at this point I assume you won't need it.
+
 ## Gem requirements
 
 The first thing to do is, add the following line to the Gemfile:
@@ -24,6 +32,8 @@ Click on download and extract all the files in the zip file you just downloaded.
 
 Copy the files on the _js_ folder to the public/javascripts folder on your app.
 
-Copy the files on the _css_ folder to the public/stylesheets folder on your app. 
+Copy the files on the _css_ folder to the public/stylesheets folder on your app.
+
+Go to [http://github.com/rails/jquery-ujs] and copy rails.js to the public/javascripts folder on your app.
 
 

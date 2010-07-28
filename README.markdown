@@ -127,3 +127,9 @@ Notice how I used the autocomplete action's *_path* helper as the value for :aut
 Run your server, go to http://127.0.0.1:3000 and try typing 'Al' on the text field.
 
 If you can see the Autocomplete widget. You're done.
+
+# About the Author
+
+[Crowd Interactive](http://www.crowdint.com) is an American web design and development company that happens to work in Colima, Mexico. 
+We specialize in building and growing online retail stores. We don’t work with everyone – just companies we believe in. Call us today to see if there’s a fit.
+Find more info [here](http://www.crowdint.com)!

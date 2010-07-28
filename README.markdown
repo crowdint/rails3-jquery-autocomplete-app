@@ -1,6 +1,6 @@
 # rails3-jquery-autocomplete Example Application
 
-This app is meant to provide more clarity on how to use the rails3-jquery-autocomplete gem.
+This app is meant to show you how to use the [rails3-jquery-autocomplete](http://github.com/crowdint/rails3-jquery-autocomplete) gem.
 
 # The Application, step by step
 
@@ -31,6 +31,12 @@ Run the nifty-generators layout command to install some default files:
 
     rails g nifty:layout
     
+## Run the generator
+
+Run the generator to install the required files:
+
+    rails g autocomplete
+
 ## Javascript files
 
 Go to [http://jqueryui.com/download](http://jqueryui.com/download) and create a custom build for jQuery-UI. Obviously, make sure you select the Autocomplete widget.
@@ -48,7 +54,7 @@ Go to [http://github.com/rails/jquery-ujs](http://github.com/rails/jquery-ujs) a
 Open app/views/layouts/application.html.erb and put the following lines on the <head> section:
 
     <head>
-      <%= javascript_include_tag 'rails.js', 'jquery-1.4.2.js', 'jquery-ui-1.8.2.custom.min.js' %>
+      <%= javascript_include_tag 'rails.js', 'jquery-1.4.2.min.js', 'jquery-ui-1.8.2.custom.min.js', 'autocomplete-rails.js' %>
       <%= stylesheet_link_tag 'jquery-ui-1.8.2.custom.css' %>
     </head>
 
@@ -88,4 +94,35 @@ Run the server,
 
     rails s
     
-Go to http://127.0.0.1:3000 and make sure everything is running just fine.
+Go to http://127.0.0.1:3000 on your browser and make sure everything is running just fine.
+
+### The magic
+
+Add this line at the very top of the *app/controllers/welcome_controller.rb* file:
+
+      autocomplete :brand, :name
+
+And add to *config/routes.rb*:
+
+    get 'welcome/autocomplete_brand_name'
+    
+Now, run *rake routes* and you should have something like:
+
+                       welcome_show GET /welcome/show                    {:controller=>"welcome", :action=>"show"}
+    welcome_autocomplete_brand_name GET /welcome/autocomplete_brand_name {:controller=>"welcome", :action=>"autocomplete_brand_name"}
+                               root     /                                {:controller=>"welcome", :action=>"show"}
+
+## The view
+
+Replace *app/views/welcome/show.html.erb* with the following code:
+
+    <h1>Welcome!</h1>
+    <%= form_tag do %>
+      <%=text_field_tag 'name', '', :autocomplete => welcome_autocomplete_brand_name_path %>
+    <% end %>
+
+Notice how I used the autocomplete action's *_path* helper as the value for :autocomplete?
+
+Run your server, go to http://127.0.0.1:3000 and try typing 'Al' on the text field.
+
+If you can see the Autocomplete widget. You're done.

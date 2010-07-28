@@ -1,2 +1,4 @@
-<h1>Welcome#show</h1>
-<p>Find me in app/views/welcome/show.html.erb</p>
+<h1>Welcome!</h1>
+<%= form_tag do %>
+  <%=text_field_tag 'name', '', :autocomplete => welcome_autocomplete_brand_name_path %>
+<% end %>

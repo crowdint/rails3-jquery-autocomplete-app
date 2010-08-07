@@ -60,7 +60,7 @@ public/javascripts folders and use the correct version numbers for jquery and
 jquery-ui, which may be different from this example) :
 
     <head>
-      <%= javascript_include_tag 'rails.js', 'jquery-1.4.2.min.js', 'jquery-ui-1.8.4.custom.min.js', 'autocomplete-rails.js' %>
+      <%= javascript_include_tag 'jquery-1.4.2.min.js', 'jquery-ui-1.8.4.custom.min.js', 'autocomplete-rails.js', 'rails.js'  %>
       <%= stylesheet_link_tag 'jquery-ui-1.8.4.custom.css' %>
     </head>
 

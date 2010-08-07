@@ -46,17 +46,22 @@ Click on download and extract all the files in the zip file you just downloaded.
 
 Copy the files on the *js* folder to the *public/javascripts* folder on your app.
 
-Copy the files on the *css* folder to the *public/stylesheets* folder on your app.
+Copy the files on the *css* folder to the *public/stylesheets* folder on your
+app.  Note that these files may be one level down from the css folder, in
+a folder called "ui-lightness". 
 
 Go to [http://github.com/rails/jquery-ujs](http://github.com/rails/jquery-ujs) and copy *rails.js* to the *public/javascripts* folder on your app.
 
 ## Include the files on your layout
 
-Open app/views/layouts/application.html.erb and put the following lines on the <head> section:
+Open app/views/layouts/application.html.erb and put the following lines on the
+<head> section (be sure to examine your public/stylesheets and
+public/javascripts folders and use the correct version numbers for jquery and
+jquery-ui, which may be different from this example) :
 
     <head>
-      <%= javascript_include_tag 'rails.js', 'jquery-1.4.2.min.js', 'jquery-ui-1.8.2.custom.min.js', 'autocomplete-rails.js' %>
-      <%= stylesheet_link_tag 'jquery-ui-1.8.2.custom.css' %>
+      <%= javascript_include_tag 'rails.js', 'jquery-1.4.2.min.js', 'jquery-ui-1.8.4.custom.min.js', 'autocomplete-rails.js' %>
+      <%= stylesheet_link_tag 'jquery-ui-1.8.4.custom.css' %>
     </head>
 
 ## Create a model

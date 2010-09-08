@@ -7,7 +7,7 @@ gem 'rails', '3.0.0'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'nifty-generators'
-gem 'rails3-jquery-autocomplete', '0.3.0'
+gem 'rails3-jquery-autocomplete', '0.3.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'

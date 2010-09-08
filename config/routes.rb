@@ -1,7 +1,9 @@
 Rails3JqueryAutocompleteApp::Application.routes.draw do
   get "welcome/show"
   get 'welcome/autocomplete_brand_name'
-  
+
+  resources :products
+
   root :to => "welcome#show"
 
   # The priority is based upon order of creation:

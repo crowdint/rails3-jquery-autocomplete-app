@@ -16,7 +16,7 @@ The _-J_ option is used to skip prototype, at this point I assume you won't need
 
 The first thing to do is, add the following line to the Gemfile:
 
-    gem 'rails', '3.0.0.rc'
+    gem 'rails', '3.0.0'
     gem 'rails3-jquery-autocomplete'
     gem 'nifty-generators'
 
@@ -56,8 +56,8 @@ Go to [http://github.com/rails/jquery-ujs](http://github.com/rails/jquery-ujs) a
 
 Open app/views/layouts/application.html.erb and put the following lines on the
 <head> section (be sure to examine your public/stylesheets and
-public/javascripts folders and use the correct version numbers for jquery and
-jquery-ui, which may be different from this example) :
+public/javascripts folders and use the correct version numbers for jQuery and
+jQuery-UI, which may be different from this example) :
 
     <head>
       <%= javascript_include_tag 'jquery-1.4.2.min.js', 'jquery-ui-1.8.4.custom.min.js', 'autocomplete-rails.js', 'rails.js'  %>

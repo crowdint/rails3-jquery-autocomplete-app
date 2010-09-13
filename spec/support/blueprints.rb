@@ -7,3 +7,7 @@ require 'machinist/active_record'
 #     title { "Post #{sn}" }
 #     body  { "Lorem ipsum..." }
 #   end
+
+Brand.blueprint do
+  name
+end

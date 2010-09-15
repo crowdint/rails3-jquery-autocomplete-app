@@ -12,6 +12,9 @@ require 'cucumber/rails/world'
 require 'cucumber/rails/active_record'
 require 'cucumber/web/tableish'
 
+# rails3-jquery-autocomplete cucumber steps
+require 'cucumber/autocomplete'
+
 require 'capybara/rails'
 require 'capybara/cucumber'
 require 'capybara/session'

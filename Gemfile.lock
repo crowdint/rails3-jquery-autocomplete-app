@@ -87,7 +87,7 @@ GEM
       activesupport (= 3.0.0)
       bundler (~> 1.0.0)
       railties (= 3.0.0)
-    rails3-jquery-autocomplete (0.3.5)
+    rails3-jquery-autocomplete (0.3.6)
     railties (3.0.0)
       actionpack (= 3.0.0)
       activesupport (= 3.0.0)
@@ -135,7 +135,7 @@ DEPENDENCIES
   nifty-generators
   pickle
   rails (= 3.0.0)
-  rails3-jquery-autocomplete
+  rails3-jquery-autocomplete (= 0.3.6)
   rspec-rails (>= 2.0.0.beta.20)
   sqlite3-ruby
   webrat

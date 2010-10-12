@@ -4,7 +4,7 @@ gem 'rails', '3.0.0'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'nifty-generators'
-gem 'rails3-jquery-autocomplete'
+gem 'rails3-jquery-autocomplete', '0.3.6'
 
 group :test do
   gem 'cucumber-rails'

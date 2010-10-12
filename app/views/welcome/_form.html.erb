@@ -1,0 +1,7 @@
+<%= form_for @product do |f| %>
+  <%=f.label :brand_name %>
+  <%=f.autocomplete_field :brand_name, welcome_autocomplete_brand_name_path, :id_element => "#id_element_placeholder" %>
+  <%= label_tag :id_element_placeholder, 'Put the id here:' %>
+  <%= text_field_tag :id_element_placeholder, '' %>
+<% end %>
+

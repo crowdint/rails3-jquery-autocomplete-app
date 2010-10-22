@@ -1,6 +1,6 @@
 # rails3-jquery-autocomplete Example Application
 
-This app is meant to show you how to use the [rails3-jquery-autocomplete](http://github.com/crowdint/rails3-jquery-autocomplete) gem.
+This app is meant to show you how to use the [rails3-jquery-autocomplete](http://github.com/crowdint/rails3-jquery-autocomplete) gem using [mongoid](http://mongoid.org/) as ORM.
 
 # The Application, step by step
 
@@ -11,6 +11,19 @@ Use the rails command to create a new application
     rails new rails3-jquery-autocomplete -J
     
 The _-J_ option is used to skip prototype, at this point I assume you won't need it.
+
+## Mongoid configuration
+
+Let's start configuring our app to use mongoid, first add following lines to Gemfile:
+
+    gem "mongoid", "2.0.0.beta.17"
+    gem "bson_ext", "1.0.4"
+
+Next, run mongoid config generator
+
+    rails generate mongoid:config
+
+That's it, let's continue configuring rails3-jquery-autocomplete.
 
 ## Gem requirements
 

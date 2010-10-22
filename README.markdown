@@ -2,6 +2,11 @@
 
 This app is meant to show you how to use the [rails3-jquery-autocomplete](http://github.com/crowdint/rails3-jquery-autocomplete) gem using [mongoid](http://mongoid.org/) as the ORM.
 
+If you want to clone it, make sure you switch to the mongoid branch afterwards:
+
+    git clone git@github.com:crowdint/rails3-jquery-autocomplete-app.git
+    git checkout -b mongoid -t origin/mongoid
+
 You can find the same example using *ActiveRecord* [here](http://github.com/crowdint/rails3-jquery-autocomplete-app).
 
 # The Application, step by step

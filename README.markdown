@@ -1,6 +1,8 @@
 # rails3-jquery-autocomplete Example Application
 
-This app is meant to show you how to use the [rails3-jquery-autocomplete](http://github.com/crowdint/rails3-jquery-autocomplete) gem using [mongoid](http://mongoid.org/) as ORM.
+This app is meant to show you how to use the [rails3-jquery-autocomplete](http://github.com/crowdint/rails3-jquery-autocomplete) gem using [mongoid](http://mongoid.org/) as the ORM.
+
+You can find the same example using *ActiveRecord* [here](http://github.com/crowdint/rails3-jquery-autocomplete-app).
 
 # The Application, step by step
 
@@ -145,6 +147,12 @@ Notice how I used the autocomplete action's *_path* helper as the value for :aut
 Run your server, go to http://127.0.0.1:3000 and try typing 'Al' on the text field.
 
 If you can see the Autocomplete widget. You're done.
+
+# Testing with Cucumber
+
+You can find examples on how to test the autocomplete feature using cucumber in the *features* folder.
+
+You can run the tests with the *cucumber* command.
 
 # About the Author
 

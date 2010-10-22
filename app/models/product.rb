@@ -1,2 +1,4 @@
-class Product < ActiveRecord::Base
+class Product
+  include Mongoid::Document
+  field :brand_name
 end

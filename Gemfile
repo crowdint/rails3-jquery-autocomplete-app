@@ -2,9 +2,10 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.0'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'mongoid', "2.0.0.beta.17"
+gem "bson_ext", "1.0.4"
 gem 'nifty-generators'
-gem 'rails3-jquery-autocomplete'
+gem 'rails3-jquery-autocomplete', :git => 'git@github.com:crowdint/rails3-jquery-autocomplete.git', :branch => 'mongoid'
 
 group :test do
   gem 'cucumber-rails'

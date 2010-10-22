@@ -1,10 +1,3 @@
-GIT
-  remote: git@github.com:crowdint/rails3-jquery-autocomplete.git
-  revision: 16ea2d222b649a6753a63aa0e24fe5f6bfd0360e
-  branch: mongoid
-  specs:
-    rails3-jquery-autocomplete (0.3.6)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -108,6 +101,7 @@ GEM
       activesupport (= 3.0.0)
       bundler (~> 1.0.0)
       railties (= 3.0.0)
+    rails3-jquery-autocomplete (0.4.0)
     railties (3.0.0)
       actionpack (= 3.0.0)
       activesupport (= 3.0.0)
@@ -159,6 +153,6 @@ DEPENDENCIES
   nifty-generators
   pickle
   rails (= 3.0.0)
-  rails3-jquery-autocomplete!
+  rails3-jquery-autocomplete (= 0.4.0)
   rspec-rails (>= 2.0.0.beta.20)
   webrat

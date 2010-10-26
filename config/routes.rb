@@ -4,6 +4,7 @@ Rails3JqueryAutocompleteApp::Application.routes.draw do
   get 'welcome/id_element_example'
   get "welcome/ajax_form_example"
   get "welcome/show_the_form"
+  get "welcome/formtastic"
 
   resources :products
 

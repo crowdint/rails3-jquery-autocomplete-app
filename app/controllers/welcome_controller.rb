@@ -16,4 +16,8 @@ class WelcomeController < ApplicationController
   def show_the_form
     @product = Product.new
   end
+
+  def formtastic
+    @product = Product.new
+  end
 end

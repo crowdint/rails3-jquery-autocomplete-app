@@ -28,3 +28,15 @@ Feature: Autocomplete
     Then the "Brand name" field should contain "Alpha"
     Then the "Put the id here:" field should contain the id for "Alpha"
 
+  @javascript
+  Scenario: Autocomplete with Formtastic
+    Given the following brands exists:
+      | name  |
+      | Alpha |
+      | Beta  |
+      | Gamma |
+    And I go to the welcome formtastic page
+    And I fill in "Brand name" with "al"
+    And I choose "Alpha" in the autocomplete list
+    Then the "Brand name" field should contain "Alpha"
+    Then the "Put the id here:" field should contain the id for "Alpha"

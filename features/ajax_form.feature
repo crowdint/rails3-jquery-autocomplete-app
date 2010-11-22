@@ -3,7 +3,7 @@ Feature: Autocomplete
   As a User
   I want autocomplete on my Ajax forms!
 
-  @javascript @focus
+  @javascript
   Scenario: Autocomplete
     Given the following brands exists:
       | name  |
@@ -15,4 +15,3 @@ Feature: Autocomplete
     And I fill in "Brand name" with "al"
     And I choose "Alpha" in the autocomplete list
     Then the "Brand name" field should contain "Alpha"
-

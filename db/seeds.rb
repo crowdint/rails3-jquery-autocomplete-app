@@ -9,3 +9,6 @@
 Brand.create(:name => 'Alpha')
 Brand.create(:name => 'Beta')
 Brand.create(:name => 'Gama')
+BrandSubtype.create(:name => 'Alpha')
+BrandSubtype.create(:name => 'Beta')
+BrandSubtype.create(:name => 'Gama')

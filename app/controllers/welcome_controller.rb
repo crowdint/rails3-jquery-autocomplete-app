@@ -20,4 +20,9 @@ class WelcomeController < ApplicationController
   def formtastic
     @product = Product.new
   end
+
+  autocomplete :brand_subtype, :name
+  def subtype
+    @product = Product.new
+  end
 end

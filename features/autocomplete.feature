@@ -40,3 +40,15 @@ Feature: Autocomplete
     And I choose "Alpha" in the autocomplete list
     Then the "Brand name" field should contain "Alpha"
     Then the "Put the id here:" field should contain the id for "Alpha"
+
+  @javascript @focus
+  Scenario: Autocomplete with a brand subtype
+    Given the following brand_subtypes exists:
+      | name  |
+      | Alpha |
+      | Beta  |
+      | Gamma |
+    And I go to the welcome subtype page
+    And I fill in "Brand name" with "al"
+    And I choose "Alpha" in the autocomplete list
+    Then the "Brand name" field should contain "Alpha"

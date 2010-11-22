@@ -6,6 +6,9 @@ Rails3JqueryAutocompleteApp::Application.routes.draw do
   get "welcome/show_the_form"
   get "welcome/formtastic"
 
+  get 'welcome/autocomplete_brand_subtype_name'
+  get "welcome/subtype"
+
   resources :products
 
   root :to => "welcome#show"

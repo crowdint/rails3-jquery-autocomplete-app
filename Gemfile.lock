@@ -1,3 +1,8 @@
+PATH
+  remote: /home/chischaschos/Projects/rails3-jquery-autocomplete
+  specs:
+    rails3-jquery-autocomplete (0.5.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -95,7 +100,6 @@ GEM
       activesupport (= 3.0.0)
       bundler (~> 1.0.0)
       railties (= 3.0.0)
-    rails3-jquery-autocomplete (0.5.0)
     railties (3.0.0)
       actionpack (= 3.0.0)
       activesupport (= 3.0.0)
@@ -146,7 +150,7 @@ DEPENDENCIES
   nifty-generators
   pickle
   rails (= 3.0.0)
-  rails3-jquery-autocomplete (= 0.5.0)
+  rails3-jquery-autocomplete!
   rspec-rails (>= 2.0.0.beta.20)
   sqlite3-ruby
   webrat

@@ -1,0 +1,2 @@
+class BrandSubtype < Brand
+end

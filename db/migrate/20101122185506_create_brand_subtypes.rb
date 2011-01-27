@@ -6,6 +6,6 @@ class CreateBrandSubtypes < ActiveRecord::Migration
   end
 
   def self.down
-    remove_column :users, :type
+    remove_column :brands, :type
   end
 end

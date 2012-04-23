@@ -1,18 +1,34 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
+gem 'rails', '~>3.2'
 
-gem 'mongoid', "2.0.0.beta.17"
-gem "bson_ext", "1.0.4"
+# Make sure you include mogoid before rails3 jquery automplete otherwise
+# activerecord adapter will be used
+gem 'mongoid'
+
+gem "bson_ext"
+
 gem 'nifty-generators'
-gem 'rails3-jquery-autocomplete', '0.4.0'
+
+gem 'rails3-jquery-autocomplete'
+
+group :assets do
+
+  gem 'sass-rails',   '~> 3.2.3'
+
+  gem 'coffee-rails', '~> 3.2.1'
+
+  gem 'uglifier', '>= 1.0.3'
+end
 
 group :test do
   gem 'cucumber-rails'
-  gem 'capybara'
+
+  gem 'capybara-webkit'
+
   gem 'pickle'
-  gem 'machinist', '>= 2.0.0.beta2'
-  gem 'rspec-rails', '>=2.0.0.beta.20'
-  gem 'webrat'
-  gem 'database_cleaner'
+
+  gem 'machinist'
+
+  gem 'rspec-rails'
 end

@@ -38,7 +38,7 @@ Run the nifty-generators layout command to install some default files:
 
 Run the generator to install the required files:
 
-    rails g autocomplete
+    rails g autocomplete:install
 
 ## Javascript files
 
